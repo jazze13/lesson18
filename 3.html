@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/bagua.css">
+
+    <style>
+
+        td {
+            position:relative;
+            overflow:visible;
+        }
+
+        textarea {
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            resize:none;
+            overflow:hidden;
+            outline:none;
+        }
+
+        .cell-buttons {
+            position:absolute;
+            left:0;
+            bottom:-20px;
+            box-sizing:border-box;
+            padding:0;
+            margin:0;
+            z-index:5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul style="list-style:none;">
+                <li><a href="index.html">редактируемый div</a></li>
+                <li><a href="2.html">добавить пункт к выпадающему списку</a></li>
+                <li><a href="3.html">редактирование td по клику</a></li>
+                <li><a href="4.html">депозитный калькулятор</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>Кликните на ячейку таблицы, чтобы отредактировать её. Нажмите ОК или ОТМЕНА, когда закончите.</p>
+
+    <table id="bagua-table">
+    <tr>
+    <th colspan="3">Квадрат <em>Bagua</em>: Направление, Элемент, Цвет, Значение</th>
+    </tr>
+    <tr>
+        <td class="nw"><strong>Северо-Запад</strong>
+            <br>Металл
+            <br>Серебро
+            <br>Старейшины
+        </td>
+        <td class="n"><strong>Север</strong>
+            <br>Вода
+            <br>Синий
+            <br>Перемены
+        </td>
+        <td class="ne"><strong>Северо-Восток</strong>
+            <br>Земля
+            <br>Жёлтый
+            <br>Направление
+        </td>
+    </tr>
+    <tr>
+        <td class="w"><strong>Запад</strong>
+            <br>Металл
+            <br>Золото
+            <br>Молодость
+        </td>
+        <td class="c"><strong>Центр</strong>
+            <br>Всё
+            <br>Пурпурный
+            <br>Гармония
+        </td>
+        <td class="e"><strong>Восток</strong>
+            <br>Дерево
+            <br>Синий
+            <br>Будущее
+        </td>
+    </tr>
+    <tr>
+        <td class="sw"><strong>Юго-Запад</strong>
+            <br>Земля
+            <br>Коричневый
+            <br>Спокойствие
+        </td>
+        <td class="s"><strong>Юг</strong>
+            <br>Огонь
+            <br>Оранжевый
+            <br>Слава
+        </td>
+        <td class="se"><strong>Юго-Восток</strong>
+            <br>Дерево
+            <br>Зеленый
+            <br>Роман
+        </td>
+    </tr>
+
+    </table>
+
+    <div class="cell-buttons" style="display:none;">
+        <button class="button-ok cell-button">OK</button>
+        <button class="button-cancel cell-button">Cancel</button>
+    </div>
+
+
+    <script src="assets/js/script3.js"></script>
+
+</body>
+
+</html>
